@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: auth-api
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/auth
+        username: postgres
+        password: root
+    jpa:
+        hibernate:
+        ddl-auto: create-drop
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        generate-ddl: true
+        show-sql: true
+    profiles:
+        active: dev
